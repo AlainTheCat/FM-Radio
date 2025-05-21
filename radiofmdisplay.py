@@ -3,7 +3,7 @@
 """
 Wigdet Radio FM display
 
-Author: Alain CUYNAT
+Author: Alain the cat
 Website: mao2.fr
 
 """
