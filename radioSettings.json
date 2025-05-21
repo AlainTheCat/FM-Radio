@@ -1,0 +1,98 @@
+{
+    "preset0": {
+        "channel": 89.6,
+        "enable": true,
+        "id": 0,
+        "name": "INTER"
+    },
+    "preset1": {
+        "channel": 95.4,
+        "enable": true,
+        "id": 1,
+        "name": "LENGADOC"
+    },
+    "preset2": {
+        "channel": 90.1,
+        "enable": true,
+        "id": 2,
+        "name": "  FUN  "
+    },
+    "preset3": {
+        "channel": 104.5,
+        "enable": true,
+        "id": 3,
+        "name": "LODEVE"
+    },
+    "preset4": {
+        "channel": 91.2,
+        "enable": true,
+        "id": 4,
+        "name": "          RTL   "
+    },
+    "preset5": {
+        "channel": 97.3,
+        "enable": true,
+        "id": 5,
+        "name": " MUSIQUE"
+    },
+    "preset6": {
+        "channel": 99.1,
+        "enable": true,
+        "id": 6,
+        "name": "NOSTALGIE"
+    },
+    "preset7": {
+        "channel": 100.8,
+        "enable": true,
+        "id": 7,
+        "name": " RIRE & CHANSON"
+    },
+    "preset8": {
+        "channel": 99.9,
+        "enable": true,
+        "id": 8,
+        "name": "  RMC  "
+    },
+    "preset9": {
+        "channel": 103.6,
+        "enable": true,
+        "id": 9,
+        "name": "BLEU.HER"
+    },
+    "preset10": {
+        "channel": 105.1,
+        "enable": true,
+        "id": 10,
+        "name": "  INFO  "
+    },
+    "preset11": {
+        "channel": 88.7,
+        "enable": true,
+        "id": 11,
+        "name": "CULTURE"
+    },
+    "preset12": {
+        "channel": 92.2,
+        "enable": true,
+        "id": 12,
+        "name": "EUROPE2"
+    },
+    "preset13": {
+        "channel": 98.1,
+        "enable": true,
+        "id": 13,
+        "name": "TOTEM"
+    },
+    "preset14": {
+        "channel": 101.4,
+        "enable": true,
+        "id": 14,
+        "name": "RFM"
+    },
+    "preset15": {
+        "channel": 89.6,
+        "enable": false,
+        "id": 15,
+        "name": "#16"
+    }
+}
