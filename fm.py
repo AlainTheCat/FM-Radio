@@ -9,7 +9,7 @@
  The device is plugged on USB HID
  For installation read readme.txt file
 
- Author: Alain Cuynat
+ Author: Alain the cat
  Website: mao2.fr
 """
 
