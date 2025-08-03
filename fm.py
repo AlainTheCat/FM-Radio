@@ -21,7 +21,7 @@ from MainWindow import Ui_MainWindow
 from PySide6.QtWidgets import QMainWindow, QMessageBox, QProgressBar
 from PySide6.QtWidgets import QLabel, QPushButton
 from PySide6.QtWidgets import QApplication, QVBoxLayout
-from PySide6.QtCore import QTimer, QObject, Signal
+from PySide6.QtCore import QTimer, QObject, Signal, QFile
 from PySide6.QtGui import QIcon, QColor
 from qled import QLed
 from radiofmdisplay import RadioFMDisplay
@@ -128,8 +128,8 @@ class Fm(QMainWindow, Ui_MainWindow):
                      32, 32, 32, 158, 32, 32, 32, 197, 198, 140, 32, 253, 213, 216, 254, 32, 32, 32, 32, 32, 32, 32,
                      227, 229, 230, 156, 32, 253, 245, 248, 32, 32, 32, 32, 32, 32, 32, 32)
 
-        self.comboBoxDeEmphasis.addItems(["USA 75 µSec", "Europe 50 µSec", "Disabled"])
-        self.comboBoxDeEmphasis.setCurrentText("Europe 50 µSec")
+        self.comboBoxDeEmphasis.addItems(["USA 75 µS", "Europe 50 µS", "Disabled"])
+        self.comboBoxDeEmphasis.setCurrentText("Europe 50 µS")
 
         self.spinBoxUpDownSeekThreshold.setValue(17)
 
@@ -1094,9 +1094,20 @@ class Fm(QMainWindow, Ui_MainWindow):
         json_object = json.dumps(settings, indent=4)
         with open("radioSettings.json", "w") as outfile:
             outfile.write(json_object)
+
+def loadStyleSheet(app, qssFile):
+    file = QFile(qssFile)
+    if file.open(QFile.ReadOnly | QFile.Text):
+        styleSheet = file.readAll().data().decode("utf-8")
+        app.setStyleSheet(styleSheet)
+
 def main():
     """Main program"""
     app = QApplication(sys.argv)
+
+    # Load the Combinear.qss style sheet
+    loadStyleSheet(app, "qss/Combinear.qss")
+
     window = Fm()
     window.show()
     sys.exit(app.exec())

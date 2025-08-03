@@ -98,7 +98,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>Status</string>
+     <string>Values</string>
     </property>
     <widget class="QLabel" name="label1">
      <property name="geometry">
@@ -434,6 +434,11 @@
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBoxSeekThreshold">
@@ -451,27 +456,22 @@
     <widget class="QSpinBox" name="spinBoxUpDownSeekThreshold">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>7</x>
        <y>30</y>
-       <width>88</width>
+       <width>101</width>
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="suffix">
+      <string notr="true">___dBµV</string>
+     </property>
      <property name="value">
       <number>17</number>
-     </property>
-    </widget>
-    <widget class="QLabel" name="labelSeekThreshold">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>36</y>
-       <width>31</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>dBµV</string>
      </property>
     </widget>
    </widget>
@@ -885,7 +885,7 @@
    <widget class="QGroupBox" name="groupBoxDate">
     <property name="geometry">
      <rect>
-      <x>920</x>
+      <x>912</x>
       <y>370</y>
       <width>281</width>
       <height>111</height>
@@ -938,7 +938,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>580</y>
+      <y>590</y>
       <width>891</width>
       <height>91</height>
      </rect>
@@ -1185,7 +1185,7 @@
     <property name="geometry">
      <rect>
       <x>912</x>
-      <y>580</y>
+      <y>590</y>
       <width>281</width>
       <height>91</height>
      </rect>
@@ -1252,14 +1252,14 @@
    <widget class="QGroupBox" name="StatusStrip">
     <property name="geometry">
      <rect>
-      <x>12</x>
-      <y>680</y>
+      <x>10</x>
+      <y>690</y>
       <width>1181</width>
-      <height>80</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="title">
-     <string/>
+     <string>Status</string>
     </property>
     <widget class="QLabel" name="toolStripStatusLabel1">
      <property name="geometry">
